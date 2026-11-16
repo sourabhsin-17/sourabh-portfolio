@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourabh Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body class="light-mode">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Sourabh Singh</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home"         class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#about"        class="nav-link" data-section="about">About</a></li>
+          <li><a href="#education"    class="nav-link" data-section="education">Education</a></li>
+          <li><a href="#skills"       class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects"     class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#hobbies"      class="nav-link" data-section="hobbies">Hobbies</a></li>
+          <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+          <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="theme-icon" id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME / HERO ===== -->
+    <section class="section hero-section" id="home">
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/profile.jpg"
+            alt="Sourabh Singh – profile photo"
+            class="hero-photo"
+            id="profile-photo"
+          />
+        </div>
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Sourabh Singh</h1>
+          <p class="hero-tagline">Computer Science Engineering Student&nbsp;|&nbsp;Aspiring Software Developer</p>
+          <p class="hero-location">
+            <span class="location-pin">📍</span>
+            Bangalore, Karnataka, India
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/sourabhsin-17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2.07c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sourabh-singh-820a3b429" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Hi, I'm <strong>Sourabh Singh</strong>, a Computer Science and Engineering student
+              specialising in Artificial Intelligence and Machine Learning at
+              Bosscoder School of Technology.
+            </p>
+            <p>
+              I am genuinely interested in programming, technology and
+              continuously learning new things. I enjoy exploring new ideas,
+              improving my problem-solving abilities and developing my technical
+              skills through practical projects.
+            </p>
+            <p>
+              Currently in the early stages of my engineering journey, I am
+              building a strong foundation in programming fundamentals and
+              frontend development while actively working on personal projects
+              to apply what I learn.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="info-card">
+              <span class="info-icon">🎓</span>
+              <div>
+                <p class="info-label">College</p>
+                <p class="info-value">Bosscoder School of Technology</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📚</span>
+              <div>
+                <p class="info-label">Course</p>
+                <p class="info-value">B.Tech – CSE (AI &amp; ML)</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📅</span>
+              <div>
+                <p class="info-label">Batch</p>
+                <p class="info-value">2026 – 2030</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Bangalore, Karnataka, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section alt-bg" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-degree">B.Tech – Computer Science &amp; Engineering</h3>
+                  <p class="edu-spec">Specialisation: Artificial Intelligence &amp; Machine Learning</p>
+                </div>
+                <span class="edu-year">2026 – 2030</span>
+              </div>
+              <p class="edu-college">Bosscoder School of Technology</p>
+              <p class="edu-location">📍 Bangalore, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and areas I am currently learning and working with.</p>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="skill-icon">☕</span>
+              <p class="skill-name">Java</p>
+              <p class="skill-note">Programming fundamentals</p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">🌐</span>
+              <p class="skill-name">HTML5</p>
+              <p class="skill-note">Web markup & structure</p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">🎨</span>
+              <p class="skill-name">CSS3</p>
+              <p class="skill-note">Styling & layout</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3 class="skills-group-title">Areas of Learning</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="skill-icon">🧩</span>
+              <p class="skill-name">Programming Fundamentals</p>
+              <p class="skill-note">Logic & problem solving</p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">💻</span>
+              <p class="skill-name">Frontend Development</p>
+              <p class="skill-note">Building web interfaces</p>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon">🤖</span>
+              <p class="skill-name">AI &amp; ML Concepts</p>
+              <p class="skill-note">Academic coursework</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section alt-bg" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Work I have built and am actively developing.</p>
+
+        <div class="projects-grid">
+
+          <!-- AEROSAR_ Project -->
+          <article class="project-card">
+            <div class="project-header">
+              <h3 class="project-name">AEROSAR_</h3>
+              <a
+                href="https://github.com/sourabhsin-17/AEROSAR_"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-github-link"
+                aria-label="View AEROSAR_ on GitHub"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2.07c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+            <div class="project-body">
+              <p class="project-desc" id="aerosar-desc">
+                A project built and published on GitHub. Visit the repository for the full description, features and technology stack.
+                <em>(Description will be updated once the repository README is reviewed.)</em>
+              </p>
+              <div class="project-tags" id="aerosar-tags">
+                <!-- Tags populated after repo inspection -->
+              </div>
+            </div>
+            <div class="project-footer">
+              <a
+                href="https://github.com/sourabhsin-17/AEROSAR_"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >Repository →</a>
+            </div>
+          </article>
+
+          <!-- Placeholder for future projects -->
+          <article class="project-card project-placeholder">
+            <div class="project-header">
+              <h3 class="project-name placeholder-title">More Projects Coming Soon</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">
+                I am actively working on new projects. Check back here or follow me on
+                <a href="https://github.com/sourabhsin-17" target="_blank" rel="noopener noreferrer">GitHub</a>
+                for updates.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section class="section" id="hobbies">
+      <div class="container">
+        <h2 class="section-title">Hobbies &amp; Interests</h2>
+        <p class="section-subtitle">Things I enjoy outside the classroom.</p>
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <span class="hobby-icon">🏀</span>
+            <p class="hobby-name">Playing Basketball</p>
+          </div>
+          <div class="hobby-card">
+            <span class="hobby-icon">📖</span>
+            <p class="hobby-name">Reading Books</p>
+          </div>
+          <div class="hobby-card">
+            <span class="hobby-icon">💃</span>
+            <p class="hobby-name">Dancing</p>
+          </div>
+          <div class="hobby-card">
+            <span class="hobby-icon">🎵</span>
+            <p class="hobby-name">Listening to Music</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section class="section alt-bg" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Milestones from my academic journey so far.</p>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon-wrap">
+              <span class="achievement-icon">🏆</span>
+            </div>
+            <div class="achievement-info">
+              <h3 class="achievement-title">BST Internal Hackathon</h3>
+              <p class="achievement-org">Bosscoder School of Technology</p>
+              <p class="achievement-desc">
+                Participated in the Bosscoder School of Technology Internal Hackathon,
+                collaborating with peers to build a solution under time constraints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Placeholder -->
+          <div class="achievement-card achievement-placeholder">
+            <div class="achievement-icon-wrap">
+              <span class="achievement-icon">⭐</span>
+            </div>
+            <div class="achievement-info">
+              <h3 class="achievement-title">More Coming Soon</h3>
+              <p class="achievement-desc">
+                This space is reserved for future certifications, competitions and
+                recognitions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">I'd love to hear from you. Feel free to reach out.</p>
+
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Contact Details</h3>
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:sourabhsin17@gmail.com" class="contact-value">sourabhsin17@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2.07c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/sourabhsin-17" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/sourabhsin-17</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+              </span>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/sourabh-singh-820a3b429" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/sourabh-singh-820a3b429</a>
+              </div>
+            </div>
+
+            <div class="contact-note">
+              <p>
+                <strong>Note:</strong> The contact form below is a frontend demonstration.
+                Messages submitted here are not delivered to an email inbox.
+                To enable actual message delivery, a backend service or form provider
+                (such as Formspree or EmailJS) would need to be connected.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">Name <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                />
+                <span class="field-error" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Email <span class="required">*</span></label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                />
+                <span class="field-error" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="form-subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                />
+                <span class="field-error" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message <span class="required">*</span></label>
+                <textarea
+                  id="form-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message..."
+                ></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2026 Sourabh Singh. Built with HTML, CSS &amp; JavaScript.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/sourabhsin-17" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.42 7.88 10.95.58.1.79-.25.79-.56v-2.07c-3.2.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 2.89-.39c.98 0 1.97.13 2.89.39 2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sourabh-singh-820a3b429" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
